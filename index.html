@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARLEV - Beranda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <h1>ARLEV</h1>
+      <p>Tempat Jual Beli Terpercaya</p>
+    </a>
+
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Cari produk, kategori, atau toko">
+      <button type="submit">⌕</button>
+    </form>
+
+    <div class="top-actions">
+      <a href="produk.html"><span>🛒</span>Keranjang</a>
+      <a href="#" data-alert="Fitur chat masih berupa tampilan simulasi."><span>💬</span>Chat</a>
+      <a href="riwayat.html"><span>👤</span>Akun</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="category-toggle"><span class="hamburger">☰</span> Kategori</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="index.html#flash-sale">Flash Sale</a>
+      <a href="index.html#promo">Promo</a>
+      <a href="#" data-alert="Halaman toko masih berupa simulasi.">Toko</a>
+      <a href="#" data-alert="Halaman bantuan masih berupa simulasi.">Bantuan</a>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <section class="container hero">
+    <div>
+      <h1>Belanja Mudah,<br>Jual Beli Aman</h1>
+      <p>Temukan produk terbaik dari berbagai kategori hanya di Arlev.</p>
+      <a class="btn" href="produk.html">Belanja Sekarang</a>
+    </div>
+
+    <div>
+      <div class="placeholder hero-image" id="promo"></div>
+      <div class="dots"><span class="active"></span><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <section class="container section" id="kategori">
+    <div class="section-head">
+      <h2>Kategori Populer</h2>
+      <a class="see-all" href="#">Lihat Semua ›</a>
+    </div>
+    <div class="category-grid">
+      <div class="category-card"><div class="placeholder"></div><span>Elektronik</span></div>
+      <div class="category-card"><div class="placeholder"></div><span>Fashion</span></div>
+      <div class="category-card"><div class="placeholder"></div><span>Rumah Tangga</span></div>
+      <div class="category-card"><div class="placeholder"></div><span>Kecantikan</span></div>
+      <div class="category-card"><div class="placeholder"></div><span>Olahraga</span></div>
+      <div class="category-card"><div class="placeholder"></div><span>Lainnya</span></div>
+    </div>
+  </section>
+
+  <section class="container section" id="flash-sale">
+    <div class="section-head">
+      <h2>Flash Sale</h2>
+      <a class="see-all" href="#">Lihat Semua ›</a>
+    </div>
+    <div class="product-grid" id="productList">
+      <a class="product-card" href="produk.html" data-name="headset elektronik"><span class="discount">-20%</span><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">◷ 02 : 35 : 45</div></a>
+      <a class="product-card" href="produk.html" data-name="keyboard elektronik"><span class="discount">-20%</span><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">◷ 02 : 35 : 45</div></a>
+      <a class="product-card" href="produk.html" data-name="mouse elektronik"><span class="discount">-20%</span><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">◷ 02 : 35 : 45</div></a>
+      <a class="product-card" href="produk.html" data-name="powerbank elektronik"><span class="discount">-20%</span><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">◷ 02 : 35 : 45</div></a>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <h2>Produk Terlaris</h2>
+      <a class="see-all" href="#">Lihat Semua ›</a>
+    </div>
+    <div class="product-grid">
+      <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><div class="price">Rp 120.000</div><div class="meta">★ 4.8 | Terjual 120</div></a>
+      <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><div class="price">Rp 120.000</div><div class="meta">★ 4.8 | Terjual 120</div></a>
+      <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><div class="price">Rp 120.000</div><div class="meta">★ 4.8 | Terjual 120</div></a>
+      <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><div class="price">Rp 120.000</div><div class="meta">★ 4.8 | Terjual 120</div></a>
+    </div>
+  </section>
+
+  <section class="container seller">
+    <div class="seller-left">
+      <div class="store-icon">🏪</div>
+      <div>
+        <h3>Punya produk untuk dijual?</h3>
+        <p>Bergabung sebagai seller di Arlev sekarang!</p>
+      </div>
+    </div>
+    <button class="btn" data-alert="Form daftar seller masih berupa simulasi.">Daftar Seller</button>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Keuntungan Belanja di Arlev</h2></div>
+    <div class="benefits">
+      <div class="benefit"><div class="benefit-icon">🛡</div><div><h4>Aman & Terpercaya</h4><p>Transaksi aman dengan sistem terproteksi</p></div></div>
+      <div class="benefit"><div class="benefit-icon">🚚</div><div><h4>Gratis Ongkir</h4><p>Gratis ongkir ke seluruh Indonesia</p></div></div>
+      <div class="benefit"><div class="benefit-icon">💳</div><div><h4>Bayar di Tempat</h4><p>Mudah bayar saat barang sampai</p></div></div>
+      <div class="benefit"><div class="benefit-icon">🎧</div><div><h4>Layanan 24/7</h4><p>Bantuan pelanggan kapan saja</p></div></div>
+    </div>
+  </section>
+
+  <section class="container newsletter">
+    <div>
+      <h3>Berlangganan Newsletter</h3>
+      <p>Dapatkan info promo dan penawaran menarik dari Arlev.</p>
+    </div>
+    <div class="news-input">
+      <input type="email" placeholder="Masukkan email Anda">
+      <button data-alert="Email berhasil didaftarkan.">Subscribe</button>
+    </div>
+  </section>
+</main>
+
+
+<section class="container social">
+  <strong>Ikuti Kami</strong>
+  <div class="social-icons">
+    <a href="#" data-alert="Instagram simulasi.">◎</a>
+    <a href="#" data-alert="Facebook simulasi.">f</a>
+    <a href="#" data-alert="TikTok simulasi.">♪</a>
+    <a href="#" data-alert="YouTube simulasi.">▶</a>
+  </div>
+</section>
+
+<footer class="bottom-nav">
+  <div class="container bottom-inner">
+    <a href="index.html"><span>⌂</span>Beranda</a>
+    <a href="index.html#kategori"><span>▦</span>Kategori</a>
+    <a href="produk.html"><span>🛒</span>Keranjang</a>
+    <a href="#" data-alert="Chat simulasi."><span>💬</span>Chat</a>
+    <a href="riwayat.html"><span>👤</span>Akun</a>
+  </div>
+</footer>
+<div class="copyright">© 2026 Arlev. Semua hak dilindungi.</div>
+
+<script src="script.js"></script>
+</body>
+</html>

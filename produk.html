@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARLEV - Detail Produk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <h1>ARLEV</h1>
+      <p>Tempat Jual Beli Terpercaya</p>
+    </a>
+
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Cari produk, kategori, atau toko">
+      <button type="submit">⌕</button>
+    </form>
+
+    <div class="top-actions">
+      <a href="produk.html"><span>🛒</span>Keranjang</a>
+      <a href="#" data-alert="Fitur chat masih berupa tampilan simulasi."><span>💬</span>Chat</a>
+      <a href="riwayat.html"><span>👤</span>Akun</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="category-toggle"><span class="hamburger">☰</span> Kategori</div>
+    <div class="nav-links">
+      <a href="index.html" >Beranda</a>
+      <a href="index.html#flash-sale">Flash Sale</a>
+      <a href="index.html#promo">Promo</a>
+      <a href="#" data-alert="Halaman toko masih berupa simulasi.">Toko</a>
+      <a href="#" data-alert="Halaman bantuan masih berupa simulasi.">Bantuan</a>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <div class="container breadcrumb">Beranda › Elektronik › Detail Produk</div>
+
+  <section class="container detail-top">
+    <div>
+      <div class="placeholder main-img" id="mainImage"></div>
+      <div class="thumbs">
+        <div class="arrow">‹</div>
+        <button class="placeholder thumb active"></button>
+        <button class="placeholder thumb"></button>
+        <button class="placeholder thumb"></button>
+        <button class="placeholder thumb"></button>
+        <div class="arrow">›</div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Nama Produk</h1>
+      <div class="rating">★ 4.8 | Terjual 120</div>
+      <div class="price-row"><span class="big">Rp 120.000</span><span class="old">Rp 150.000</span><span class="off">-20%</span></div>
+      <p class="desc">Deskripsi singkat tentang produk. Jelaskan keunggulan, fungsi, dan manfaat utama dari produk ini.</p>
+
+      <h3>Pilih Varian</h3>
+      <div class="variant-row">
+        <button class="variant active">Hitam</button>
+        <button class="variant">Putih</button>
+        <button class="variant">Silver</button>
+      </div>
+
+      <h3>Kuantitas</h3>
+      <div class="qty"><button id="minusQty">−</button><input id="qtyInput" value="1" readonly><button id="plusQty">+</button></div>
+      <p>Tersedia 25 stok</p>
+
+      <div class="cta-row">
+        <button class="btn" id="addCart">🛒 Tambah ke Keranjang</button>
+        <a class="btn dark" href="riwayat.html">Beli Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container info-panels">
+    <div class="info-panel"><h3>Pengiriman</h3><p>Pilih Kurir</p><button class="btn" style="width:100%">JNE Reguler (2-3 hari)⌄</button><p><b>Ongkos Kirim Rp 18.000</b></p><p>Estimasi tiba: 2–3 hari kerja</p></div>
+    <div class="info-panel"><h3>Alamat Pengiriman</h3><p><b>Andi Pratama</b> (6281234567890)</p><p>Jl. Melati No. 10, RT 02/RW 05</p><p>Kel. Sukamaju, Kec. Cilandak</p><p>Kota Jakarta Selatan, DKI Jakarta 12430</p></div>
+    <div class="info-panel"><h3>Ringkasan Pesanan</h3><p>Subtotal: <b id="subtotal">Rp 120.000</b></p><p>Ongkos Kirim: <b>Rp 18.000</b></p><p>Total Pembayaran: <b id="total">Rp 138.000</b></p></div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Metode Pembayaran</h2></div>
+    <div class="payments">
+      <div class="pay-card active"><div class="pay-icon">🏦</div><div><h4>Transfer Bank</h4><p>Transfer ke rekening bank pilihan</p></div></div>
+      <div class="pay-card"><div class="pay-icon">👛</div><div><h4>E-Wallet</h4><p>OVO, DANA, GoPay, ShopeePay</p></div></div>
+      <div class="pay-card"><div class="pay-icon">💵</div><div><h4>COD</h4><p>Bayar saat barang sampai</p></div></div>
+      <div class="pay-card"><div class="pay-icon">💳</div><div><h4>Kartu Kredit</h4><p>Visa, Mastercard, JCB</p></div></div>
+    </div>
+  </section>
+
+  <section class="container tabs">
+    <div class="tab-head">
+      <button class="tab-btn active" data-tab="desc">Deskripsi Produk</button>
+      <button class="tab-btn" data-tab="spec">Spesifikasi</button>
+      <button class="tab-btn" data-tab="review">Ulasan</button>
+    </div>
+    <div class="tab-body">
+      <div class="tab-content active" id="desc"><h3>Deskripsi Produk</h3><p>Produk dirancang dengan material berkualitas tinggi untuk membantu performa terbaik dan daya tahan optimal.</p><ul><li>Kualitas terbaik dan tahan lama</li><li>Desain modern dan minimalis</li><li>Mudah digunakan</li></ul></div>
+      <div class="tab-content" id="spec"><h3>Spesifikasi</h3><p>Kategori: Elektronik<br>Merek: Arlev<br>Model: ALV-100<br>Warna: Hitam / Putih / Silver<br>Garansi: 12 bulan</p></div>
+      <div class="tab-content" id="review"><h3>Ulasan</h3><p><b>Budi Santoso</b> ★★★★★<br>Barang sesuai deskripsi, kualitas bagus. Pengiriman cepat.</p><p><b>Siti Aisyah</b> ★★★★☆<br>Produk bagus dan berfungsi dengan baik.</p></div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Produk Terkait</h2><a class="see-all" href="#">Lihat Semua ›</a></div>
+    <div class="related">
+      <div class="arrow">‹</div>
+      <div class="product-grid">
+        <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">★ 4.8 | Terjual 120</div></a>
+        <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">★ 4.8 | Terjual 120</div></a>
+        <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">★ 4.8 | Terjual 120</div></a>
+        <a class="product-card" href="produk.html"><div class="placeholder"></div><h3>Nama Produk</h3><span class="price">Rp 120.000</span><span class="old">Rp 150.000</span><div class="meta">★ 4.8 | Terjual 120</div></a>
+      </div>
+      <div class="arrow">›</div>
+    </div>
+  </section>
+</main>
+
+<section class="container social">
+  <strong>Ikuti Kami</strong>
+  <div class="social-icons">
+    <a href="#" data-alert="Instagram simulasi.">◎</a>
+    <a href="#" data-alert="Facebook simulasi.">f</a>
+    <a href="#" data-alert="TikTok simulasi.">♪</a>
+    <a href="#" data-alert="YouTube simulasi.">▶</a>
+  </div>
+</section>
+
+<footer class="bottom-nav">
+  <div class="container bottom-inner">
+    <a href="index.html"><span>⌂</span>Beranda</a>
+    <a href="index.html#kategori"><span>▦</span>Kategori</a>
+    <a href="produk.html"><span>🛒</span>Keranjang</a>
+    <a href="#" data-alert="Chat simulasi."><span>💬</span>Chat</a>
+    <a href="riwayat.html"><span>👤</span>Akun</a>
+  </div>
+</footer>
+<div class="copyright">© 2026 Arlev. Semua hak dilindungi.</div>
+
+<script src="script.js"></script>
+</body>
+</html>

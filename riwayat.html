@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARLEV - Riwayat Pesanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <h1>ARLEV</h1>
+      <p>Tempat Jual Beli Terpercaya</p>
+    </a>
+
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Cari produk, kategori, atau toko">
+      <button type="submit">⌕</button>
+    </form>
+
+    <div class="top-actions">
+      <a href="produk.html"><span>🛒</span>Keranjang</a>
+      <a href="#" data-alert="Fitur chat masih berupa tampilan simulasi."><span>💬</span>Chat</a>
+      <a href="riwayat.html"><span>👤</span>Akun</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="category-toggle"><span class="hamburger">☰</span> Kategori</div>
+    <div class="nav-links">
+      <a href="index.html" >Beranda</a>
+      <a href="index.html#flash-sale">Flash Sale</a>
+      <a href="index.html#promo">Promo</a>
+      <a href="#" data-alert="Halaman toko masih berupa simulasi.">Toko</a>
+      <a href="#" data-alert="Halaman bantuan masih berupa simulasi.">Bantuan</a>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <div class="container">
+    <h1 class="page-title">Riwayat Pesanan</h1>
+    <div class="breadcrumb">Beranda › Akun › Riwayat Pesanan</div>
+
+    <section class="account-layout">
+      <aside class="sidebar">
+        <div class="profile"><div class="placeholder avatar"></div><div><h4>Nama Pengguna</h4><p>user@email.com</p><p>Member</p></div></div>
+        <ul class="menu">
+          <li>👤 Profil Saya</li>
+          <li>👜 Pesanan Saya</li>
+          <li class="active">💳 Pembayaran</li>
+          <li>📍 Alamat</li>
+          <li>♡ Wishlist</li>
+          <li>↪ Keluar</li>
+        </ul>
+      </aside>
+
+      <section>
+        <div class="summary">
+          <h3>Ringkasan Pembayaran</h3>
+          <div class="metrics">
+            <div class="metric"><div class="metric-icon">👛</div><div><h4>Total Transaksi</h4><strong>24</strong><br>Pesanan</div></div>
+            <div class="metric"><div class="metric-icon">🛍</div><div><h4>Total Belanja</h4><strong>Rp 3.450.000</strong><br>Semua Waktu</div></div>
+            <div class="metric"><div class="metric-icon">✓</div><div><h4>Terakhir Dibayar</h4><strong>Rp 120.000</strong><br>20 Mei 2026</div></div>
+          </div>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-status="all">Semua</button>
+          <button class="filter" data-status="belum">Belum Bayar</button>
+          <button class="filter" data-status="diproses">Diproses</button>
+          <button class="filter" data-status="dikirim">Dikirim</button>
+          <button class="filter" data-status="selesai">Selesai</button>
+          <button class="filter" data-status="dibatalkan">Dibatalkan</button>
+        </div>
+
+        <article class="order-card" data-status="selesai">
+          <div class="order-head"><span>No. Pesanan: ARL-20260520-0001 | 20 Mei 2026, 14:35</span><div class="order-tags"><span class="tag">Sudah Dibayar</span><span class="tag">Selesai</span></div></div>
+          <div class="order-main"><div class="placeholder order-img"></div><div class="order-product"><h4>Nama Produk Contoh</h4><p>Varian: Hitam, L</p><p>x1</p></div><div class="order-buttons"><button class="btn small" data-alert="Detail pesanan dibuka.">Lihat Detail</button><button class="btn small" data-alert="Produk dimasukkan lagi ke keranjang.">Beli Lagi</button></div></div>
+          <div class="order-bottom"><div><span>Metode Pembayaran</span><b>Transfer Bank</b></div><div><span>Status Pengiriman</span><b>Selesai</b></div><div><span>Total Pembayaran</span><b>Rp 120.000</b></div></div>
+        </article>
+
+        <article class="order-card" data-status="dikirim">
+          <div class="order-head"><span>No. Pesanan: ARL-20260518-0023 | 18 Mei 2026, 10:12</span><div class="order-tags"><span class="tag">Sudah Dibayar</span><span class="tag">Dikirim</span></div></div>
+          <div class="order-main"><div class="placeholder order-img"></div><div class="order-product"><h4>Nama Produk Contoh</h4><p>Varian: Putih</p><p>x2</p></div><div class="order-buttons"><button class="btn small" data-alert="Fitur lacak pesanan dibuka.">Lacak</button><button class="btn small" data-alert="Detail pesanan dibuka.">Lihat Detail</button></div></div>
+          <div class="order-bottom"><div><span>Metode Pembayaran</span><b>OVO</b></div><div><span>Status Pengiriman</span><b>Dalam Pengiriman</b></div><div><span>Total Pembayaran</span><b>Rp 240.000</b></div></div>
+        </article>
+
+        <article class="order-card" data-status="diproses">
+          <div class="order-head"><span>No. Pesanan: ARL-20260516-0012 | 16 Mei 2026, 09:45</span><div class="order-tags"><span class="tag">Sudah Dibayar</span><span class="tag">Diproses</span></div></div>
+          <div class="order-main"><div class="placeholder order-img"></div><div class="order-product"><h4>Nama Produk Contoh</h4><p>Varian: Abu-abu</p><p>x1</p></div><div class="order-buttons"><button class="btn small" data-alert="Fitur lacak pesanan dibuka.">Lacak</button><button class="btn small" data-alert="Detail pesanan dibuka.">Lihat Detail</button></div></div>
+          <div class="order-bottom"><div><span>Metode Pembayaran</span><b>ShopeePay</b></div><div><span>Status Pengiriman</span><b>Diproses</b></div><div><span>Total Pembayaran</span><b>Rp 85.000</b></div></div>
+        </article>
+      </section>
+    </section>
+  </div>
+</main>
+
+<section class="container social">
+  <strong>Ikuti Kami</strong>
+  <div class="social-icons">
+    <a href="#" data-alert="Instagram simulasi.">◎</a>
+    <a href="#" data-alert="Facebook simulasi.">f</a>
+    <a href="#" data-alert="TikTok simulasi.">♪</a>
+    <a href="#" data-alert="YouTube simulasi.">▶</a>
+  </div>
+</section>
+
+<footer class="bottom-nav">
+  <div class="container bottom-inner">
+    <a href="index.html"><span>⌂</span>Beranda</a>
+    <a href="index.html#kategori"><span>▦</span>Kategori</a>
+    <a href="produk.html"><span>🛒</span>Keranjang</a>
+    <a href="#" data-alert="Chat simulasi."><span>💬</span>Chat</a>
+    <a href="riwayat.html"><span>👤</span>Akun</a>
+  </div>
+</footer>
+<div class="copyright">© 2026 Arlev. Semua hak dilindungi.</div>
+
+<script src="script.js"></script>
+</body>
+</html>
